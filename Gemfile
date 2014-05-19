@@ -1,4 +1,4 @@
-ruby '1.9.3'
+ruby '2.1.1'
 
 source 'https://rubygems.org'
 
@@ -11,3 +11,5 @@ gem 'coveralls', require: false
 gem 'sshkey'
 gem 'highline'
 gem 'sidekiq'
+gem 'bloggy'
+gem 'redcarpet'

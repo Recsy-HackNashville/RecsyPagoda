@@ -73,11 +73,11 @@ task "heroku" do
   existing_config  = get_config(heroku_auth_data)
 
   new_conf.each do |key,value|
-    if not existing_config.has_key? key
+    #if not existing_config.has_key? key
       set_config(heroku_auth_data, key, new_conf[key])      
-    else
-      puts "#{key} is already set"
-    end
+    #else
+      #puts "#{key} is already set"
+    #end
   end
 
 

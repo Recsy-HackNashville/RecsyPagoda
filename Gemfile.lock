@@ -13,11 +13,20 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    actionmailer (0.6.1)
+      actionpack (>= 0.9.5)
+    actionpack (1.4.0)
+    activerecord (1.6.0)
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     ansi (1.4.3)
     backports (3.1.1)
+    bloggy (0.2.2)
+      jekyll (~> 0.12.0)
+      rack-contrib
+      rails
+      rdiscount
     bourne (1.4.0)
       mocha (~> 0.13.2)
     builder (3.2.0)
@@ -83,11 +92,20 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails (0.9.5)
+      actionmailer (>= 0.6.1)
+      actionpack (>= 1.4.0)
+      activerecord (>= 1.6.0)
+      rake (>= 0.4.15)
     rake (10.0.3)
+    rdiscount (2.1.7.1)
+    redcarpet (3.1.1)
     redis (3.0.6)
     redis-namespace (1.4.1)
       redis (~> 3.0.4)
@@ -140,6 +158,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bloggy
   compass
   coveralls
   dotenv
@@ -149,6 +168,7 @@ DEPENDENCIES
   pagoda-jekyll!
   rack-test
   rake (~> 10.0.3)
+  redcarpet
   shoulda
   sidekiq
   simplecov
