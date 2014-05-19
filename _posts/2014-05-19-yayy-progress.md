@@ -1,6 +1,6 @@
 ---
 title: yayy progress
 layout: post
-published: false
+published: true
 ---
 asdfkjlksadjfl;kas
