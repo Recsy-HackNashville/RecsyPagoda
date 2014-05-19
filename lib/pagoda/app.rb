@@ -147,7 +147,7 @@ module Shwedagon
 
     get '/settings/pull' do
       
-      data = repo.git.pull({}, "origin", "master")
+      data = repo.git.pull({}, "origin", "gh-pages")
       return data + " done"
     end
 
