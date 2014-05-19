@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'bundler'
 require 'rake'
+require 'rake/testtask'
+require 'rake/task'
+require 'rdoc/task'
+require 'tasks/rails'
 
 Bundler.setup
 
