@@ -13,5 +13,6 @@ class PushCommitWorker
     Dir.chdir(repo_path)
 
     repo.git.push(git_opts, ["origin"])
+    repo.git.push(git_opts, ["origin"], 'gh-pages')
   end
 end
