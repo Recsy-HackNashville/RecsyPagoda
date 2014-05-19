@@ -12,7 +12,7 @@ class PushCommitWorker
     repo = Grit::Repo.new(repo_path) 
     Dir.chdir(repo_path)
 
-    repo.git.push(git_opts, ["origin"])
+    #repo.git.push(git_opts, ["origin"])
     repo.git.push(git_opts, ["origin"], 'gh-pages')
   end
 end
