@@ -1,4 +1,4 @@
-ruby '2.1.1'
+ruby '1.9.3'
 
 source 'https://rubygems.org'
 
@@ -13,3 +13,6 @@ gem 'highline'
 gem 'sidekiq'
 gem 'bloggy'
 gem 'redcarpet'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
